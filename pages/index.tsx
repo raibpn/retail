@@ -1,3 +1,4 @@
+import { GetServerSideProps } from "next";
 import Head from "next/head";
 import Header from "../components/Header";
 import Landing from "../components/Landing";
@@ -10,7 +11,7 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <main className="">
+      <main className="relative">
         <Landing />
       </main>
     </div>
@@ -18,3 +19,11 @@ const Home = () => {
 };
 
 export default Home;
+
+//SSR
+export const getServerSideProps: GetServerSideProps = async () => {
+  // const categories = await fetchCategories();
+  return {
+    props: {},
+  };
+};
