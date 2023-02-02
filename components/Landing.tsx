@@ -7,10 +7,10 @@ import Image from "next/image";
 const Landing = () => {
   return (
     <div className="m-4 flex items-center justify-center">
-      <div className="grid grid-cols-1 gap-5 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3">
-        <div className="h-[410px] max-w-[420px] overflow-hidden rounded shadow-lg md:h-[610px]">
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3">
+        <div className="h-[335px] w-[260px] max-w-md overflow-hidden rounded shadow-lg transition hover:scale-105 md:h-[610px] lg:w-[560px]">
           <img
-            className="h-[160px] w-full object-fill md:h-[480px]"
+            className="object-fit h-[200px] w-[260px] md:h-[470px] lg:w-[670px]"
             src="/asset/head1.jpg"
             alt="Mountain"
           />
@@ -29,9 +29,9 @@ const Landing = () => {
             </span>
           </div>
         </div>
-        <div className="h-[410px] max-w-[420px] overflow-hidden rounded shadow-lg md:h-[610px]">
+        <div className="h-[335px] w-[260px] max-w-md overflow-hidden rounded shadow-lg transition hover:scale-105 md:h-[610px] lg:w-[560px]">
           <img
-            className="h-[160px] w-full object-fill md:h-[480px]"
+            className="object-fit h-[200px] w-[260px] md:h-[470px] lg:w-[670px]"
             src="/asset/head1.jpg"
             alt="Mountain"
           />
@@ -50,9 +50,9 @@ const Landing = () => {
             </span>
           </div>
         </div>
-        <div className="h-[410px] max-w-[420px] overflow-hidden rounded shadow-lg md:h-[610px]">
+        <div className=" h-[335px] w-[260px] max-w-md overflow-hidden rounded shadow-lg transition hover:scale-105 md:h-[610px] lg:w-[560px]">
           <img
-            className="h-[160px] w-full object-fill md:h-[480px]"
+            className="object-fit h-[200px] w-[260px] md:h-[470px] lg:w-[670px]"
             src="/asset/head1.jpg"
             alt="Mountain"
           />
@@ -71,9 +71,9 @@ const Landing = () => {
             </span>
           </div>
         </div>
-        <div className="h-[410px] max-w-[420px] overflow-hidden rounded shadow-lg md:h-[610px]">
+        <div className=" h-[335px] w-[260px] max-w-md overflow-hidden rounded shadow-lg transition hover:scale-105 md:h-[610px] lg:w-[560px]">
           <img
-            className="h-[160px] w-full object-fill md:h-[480px]"
+            className="object-fit h-[200px] w-[260px] md:h-[470px] lg:w-[670px]"
             src="/asset/head1.jpg"
             alt="Mountain"
           />
