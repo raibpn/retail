@@ -33,8 +33,11 @@ const Header = () => {
       <div className="flex items-center justify-center gap-x-4 px-4 md:w-1/5">
         <SearchIcon className="headerIcon" />
         <Link href="/checkout">
-          <div className="relative h-8 w-3 cursor-pointer text-white">
-            <span className="-right-1 -top-1 z-50 flex h-1 w-1 items-center justify-center pt-1 text-sm text-slate-300">
+          <div className="relative cursor-pointer text-white">
+            <span
+              className="absolute -top-2 -left-2 z-50 flex h-4 w-4 items-center justify-center rounded-full 
+            bg-[#6aa7f7] text-[14px] font-bold text-[#1f3d10]"
+            >
               5
             </span>
             <ShoppingBagIcon className="headerIcon" />
