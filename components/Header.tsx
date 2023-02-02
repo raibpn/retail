@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import logo from "../asset/logo.jpg";
+import logo from "../public/asset/logo.jpg";
 import Link from "next/link";
 import {
   SearchIcon,

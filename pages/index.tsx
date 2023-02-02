@@ -4,13 +4,13 @@ import Landing from "../components/Landing";
 
 const Home = () => {
   return (
-    <div className="">
+    <div className="flex-column">
       <Head>
         <title>NepRetail</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <main>
+      <main className="">
         <Landing />
       </main>
     </div>
