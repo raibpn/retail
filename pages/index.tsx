@@ -1,7 +1,7 @@
 import { GetServerSideProps } from "next";
 import Head from "next/head";
 import Header from "../components/Header";
-import Landing from "../components/Landing";
+import Product from "../components/Product";
 
 const Home = () => {
   return (
@@ -12,7 +12,7 @@ const Home = () => {
       </Head>
       <Header />
       <main className="relative">
-        <Landing />
+        <Product />
       </main>
     </div>
   );

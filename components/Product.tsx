@@ -5,7 +5,7 @@ import logo from "../public/asset/logo.jpg";
 import Image from "next/image";
 import Button from "./Button";
 
-const Landing = () => {
+const Product = () => {
   return (
     <div className="m-4 flex items-center justify-center">
       <div className="relative grid grid-cols-1 gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
@@ -95,4 +95,4 @@ const Landing = () => {
   );
 };
 
-export default Landing;
+export default Product;
