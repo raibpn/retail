@@ -8,10 +8,10 @@ import Button from "./Button";
 const Landing = () => {
   return (
     <div className="m-4 flex items-center justify-center">
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-1 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3">
-        <div className="h-[335px] w-[260px] max-w-md overflow-hidden rounded shadow-lg transition hover:scale-105 md:h-[610px] lg:w-[560px]">
+      <div className="relative grid grid-cols-1 gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
+        <div className="relative h-[335px] w-[260px] max-w-md overflow-hidden rounded shadow-lg transition hover:scale-105 md:h-[610px] lg:w-[410px]">
           <img
-            className="object-fit h-[200px] w-[260px] md:h-[470px] lg:w-[670px]"
+            className="object-fit h-[200px] w-[260px] md:h-[470px] lg:w-[610px]"
             src="/asset/head1.jpg"
             alt="Mountain"
           />
@@ -27,9 +27,9 @@ const Landing = () => {
             </div>
           </div>
         </div>
-        <div className="h-[335px] w-[260px] max-w-md overflow-hidden rounded shadow-lg transition hover:scale-105 md:h-[610px] lg:w-[560px]">
+        <div className="h-[335px] w-[260px] max-w-md overflow-hidden rounded shadow-lg transition hover:scale-105 md:h-[610px] lg:w-[410px]">
           <img
-            className="object-fit h-[200px] w-[260px] md:h-[470px] lg:w-[670px]"
+            className="object-fit h-[200px] w-[260px] md:h-[470px] lg:w-[610px]"
             src="/asset/head1.jpg"
             alt="Mountain"
           />
@@ -48,9 +48,9 @@ const Landing = () => {
             </span>
           </div>
         </div>
-        <div className=" h-[335px] w-[260px] max-w-md overflow-hidden rounded shadow-lg transition hover:scale-105 md:h-[610px] lg:w-[560px]">
+        <div className=" h-[335px] w-[260px] max-w-md overflow-hidden rounded shadow-lg transition hover:scale-105 md:h-[610px] lg:w-[410px]">
           <img
-            className="object-fit h-[200px] w-[260px] md:h-[470px] lg:w-[670px]"
+            className="object-fit h-[200px] w-[260px] md:h-[470px] lg:w-[610px]"
             src="/asset/head1.jpg"
             alt="Mountain"
           />
@@ -69,7 +69,7 @@ const Landing = () => {
             </span>
           </div>
         </div>
-        <div className=" h-[335px] w-[260px] max-w-md overflow-hidden rounded shadow-lg transition hover:scale-105 md:h-[610px] lg:w-[560px]">
+        <div className=" h-[335px] w-[260px] max-w-md overflow-hidden rounded shadow-lg transition hover:scale-105 md:h-[610px] lg:w-[410px]">
           <img
             className="object-fit h-[200px] w-[260px] md:h-[470px] lg:w-[670px]"
             src="/asset/head1.jpg"
