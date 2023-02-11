@@ -2,8 +2,15 @@ import { GetServerSideProps } from "next";
 import Head from "next/head";
 import Header from "../components/Header";
 import Product from "../components/Product";
+import { fetchProducts } from "../utils/fetchProducts";
 
-const Home = () => {
+interface Props {
+  // categories: Category[];
+  products: Product[];
+  // session: Session | null;
+}
+
+const Home = ({ products }: Props) => {
   return (
     <div className="flex-column">
       <Head>
@@ -12,7 +19,7 @@ const Home = () => {
       </Head>
       <Header />
       <main className="relative">
-        <Product />
+        <Product products={products} />
       </main>
     </div>
   );
@@ -21,9 +28,17 @@ const Home = () => {
 export default Home;
 
 //SSR
-export const getServerSideProps: GetServerSideProps = async () => {
+// Backend Code
+export const getServerSideProps: GetServerSideProps<Props> = async (
+  context
+) => {
   // const categories = await fetchCategories();
+  const products = await fetchProducts();
+  // const session = await getSession(context);
+
   return {
-    props: {},
+    props: {
+      products,
+    },
   };
 };
