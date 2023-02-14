@@ -29,6 +29,8 @@ interface Product {
     _ref: string;
   };
   image: Image[];
+  height: number;
+  width: number;
 }
 
 interface Image {
