@@ -2,6 +2,7 @@ import { GetServerSideProps } from "next";
 import Head from "next/head";
 import Header from "../components/Header";
 import Product from "../components/Product";
+import { fetchCategories } from "../utils/fetchCategories";
 import { fetchProducts } from "../utils/fetchProducts";
 
 interface Props {
@@ -16,7 +17,7 @@ const Home = ({ products }: Props) => {
   //     .filter(
   //       (product) => product.category._ref === categories[category]._id ////filter products by categories
   //     )
-  //     .map((product) => <Product />);
+  //     .map((product) => <Product products={product} key={product._id} />);
   // };
   return (
     <div className="flex-column">
@@ -41,11 +42,11 @@ export const getServerSideProps: GetServerSideProps<Props> = async (
 ) => {
   // const categories = await fetchCategories();
   const products = await fetchProducts();
-  // const session = await getSession(context);
 
   return {
     props: {
       products,
+      // categories,
     },
   };
 };

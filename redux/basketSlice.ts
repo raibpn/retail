@@ -15,6 +15,7 @@ export const basketSlice = createSlice({
   initialState,
   reducers: {
     addToBasket: (state: BasketState, action: PayloadAction<Product>) => {
+      console.log("basket slice", action);
       state.items = [...state.items, action.payload];
     },
     removeFromBasket: (
@@ -40,7 +41,7 @@ export const basketSlice = createSlice({
 // Action creators are generated for each case reducer function
 export const { addToBasket, removeFromBasket } = basketSlice.actions;
 
-//Selectors
+//Selectors -> retrieving items in state to use in different components
 export const selectBasketItems = (state: RootState) => state.basket.items;
 export const selectBasketItemWithId = (state: RootState, id: string) => {
   state.basket.items.filter((item: Product) => item._id === id);
