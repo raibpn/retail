@@ -1,11 +1,8 @@
 import { GetServerSideProps } from "next";
 import Head from "next/head";
 import Header from "../components/Header";
-import Login from "../components/login";
 import Product from "../components/Product";
 import { fetchProducts } from "../utils/fetchProducts";
-// import { fetchProducts } from "./api/getProducts";
-// import { handler } from "./api/getProducts";
 
 interface Props {
   // categories: Category[];
@@ -14,6 +11,13 @@ interface Props {
 }
 
 const Home = ({ products }: Props) => {
+  // const showProducts = (category: number) => {
+  //   return products
+  //     .filter(
+  //       (product) => product.category._ref === categories[category]._id ////filter products by categories
+  //     )
+  //     .map((product) => <Product />);
+  // };
   return (
     <div className="flex-column">
       <Head>
