@@ -5,9 +5,9 @@ type Data = {
   products: Product[];
 };
 
-export default function handler(
+export default async function handler(
   req: NextApiRequest,
   res: NextApiResponse<Data>
 ) {
-  //   const categories = await sanityClient.fetch(query);
+  //used for query (groq or graphql)
 }

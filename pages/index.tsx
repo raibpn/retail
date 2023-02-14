@@ -1,8 +1,11 @@
 import { GetServerSideProps } from "next";
 import Head from "next/head";
 import Header from "../components/Header";
+import Login from "../components/login";
 import Product from "../components/Product";
 import { fetchProducts } from "../utils/fetchProducts";
+// import { fetchProducts } from "./api/getProducts";
+// import { handler } from "./api/getProducts";
 
 interface Props {
   // categories: Category[];
