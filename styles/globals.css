@@ -7,7 +7,7 @@
   body {
     @apply font-body text-black;
     @apply bg-[#e9e1e1f6] text-white !scrollbar-thin !scrollbar-track-transparent
-    !scrollbar-thumb-slate-600;
+    !scrollbar-thumb-slate-600 scrollbar-track-rounded-full scrollbar-thumb-rounded-full;
   }
 }
 
