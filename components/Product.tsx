@@ -9,14 +9,13 @@ import toast from "react-hot-toast";
 
 interface Props {
   products: Product[];
-  product: Product;
 }
 const Product = ({ products }: Props) => {
   const dispatch = useDispatch();
 
   const addItemToBasket = (id: string) => {
     console.log("addToBasket", id);
-    const product = products.find((prod) => prod.id === id);
+    const product: Product = products.find((prod) => prod.id === id);
 
     // console.log("product:", product);
     // console.log("product title:", product?.title);
@@ -30,7 +29,7 @@ const Product = ({ products }: Props) => {
   };
 
   return (
-    <div className="m-4 flex items-center justify-center">
+    <div className="m-2 flex items-center justify-center">
       <div className="relative grid grid-cols-1 gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3">
         {products.map((product, id) => (
           <div

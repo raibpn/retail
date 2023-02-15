@@ -12,7 +12,7 @@ interface Category {
 }
 
 interface Product {
-  id?: string;
+  id: string;
   // _id: string;
   createdAt?: string;
   updatedAt?: string;
