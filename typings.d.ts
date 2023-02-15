@@ -12,26 +12,26 @@ interface Category {
 }
 
 interface Product {
-   id: string;
-  _id: string;
-  _createdAt: string;
-  _updatedAt: string;
-  _rev: string;
-  _type: "product";
+  id?: string;
+  // _id: string;
+  createdAt?: string;
+  updatedAt?: string;
+  // _rev: string;
+  // _type: "product";
   title: string;
   price: number;
-  slug: {
+  slug?: {
     _type: "slug";
     current: string;
   };
   description: string;
-  category: {
-    _type: "reference";
-    _ref: string;
-  };
-  image: Image[];
-  height: number;
-  width: number;
+  //category: {
+  // _type: "reference";
+  //_ref: string;
+  // };
+  image?: Image[];
+  height?: number;
+  width?: number;
 }
 
 interface Image {
