@@ -14,7 +14,6 @@ interface Props {
 const CheckoutProduct = ({ id, items }: Props) => {
   //   const totalPrice = useSelector(selectBasketTotal);
 
-  const [price, setTotalPrice] = useState<number>();
   const dispatch = useDispatch();
 
   const removeItemFromBasket = () => {
