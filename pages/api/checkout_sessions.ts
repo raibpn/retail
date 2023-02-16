@@ -32,8 +32,8 @@ export default async function handler(
         payment_method_types: ["card"],
         billing_address_collection: "auto",
         shipping_options: [
-          { shipping_rate: "shr_1MRKh7IoAp43BbYljAgKjUiH" },
-          { shipping_rate: "shr_1MRKiuIoAp43BbYlhLqQfkxo" },
+          { shipping_rate: `${process.env.shipping_rate_dk}` },
+          { shipping_rate: `${process.env.shipping_rate_out}` },
         ],
         line_items: transformedItems,
         payment_intent_data: {},
