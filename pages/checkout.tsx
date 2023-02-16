@@ -134,7 +134,7 @@ const Checkout = () => {
                         <Currency quantity={basketTotal} currency="DKK" />
                       </span>
                     </h4>
-                    <Button title="Check Out" />
+                    <Button title="Check Out" noIcon />
                   </div>
                   <div
                     className="flex flex-1 flex-col items-center space-y-8 rounded-xl  bg-[#dcecf1f6]

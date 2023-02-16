@@ -19,7 +19,7 @@ export default async function handler(
         currency: "dkk",
         product_data: {
           name: item.title,
-          images: [items[0].image],
+          images: [item.image],
         },
         unit_amount: item.price * 100,
       },
